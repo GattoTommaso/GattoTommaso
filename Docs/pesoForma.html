@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: BigliettoTreno</title>
+        <script type="text/javascript" src ="../JavaScript/CalcoliPesoForma.js">
+        </script>
+
+        <style type="text/css">
+        .risultati{
+            color:rgba(255, 0, 0, 0.856); 
+            font-size: 110%;
+        }
+        .bottone{
+            width: 300px;
+            height: 50px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <p>La Tua Altezza <input type="text" id="Altezza">cm</p>
+            <p>Il Tuo Sesso
+                <select id="Sesso">
+                    <option>Maschio</option>
+                    <option>Femmina</option>
+                </select>
+            </p>
+            <p>La Tua Età <input type="text" id="Eta">anni</p>
+            <p><input type="button" value="calcola" class="bottone" onclick="calcola()"></p>
+
+            <p class="risultati">Formula di Lorenz <output type="text" id="PesoLorenz"></p>
+            <p class="risultati">Formula di Broca <output type="text" id="PesoBroca"></p>
+            <p class="risultati">Formula di Wan der Vael <output type="text" id="PesoWanderVael"></p>
+            <p class="risultati">Formula di Perrault <output type="text" id="PesoPerrault"></p>
+            <p class="risultati">BMI(body max index) <output type="text" id="PesoBMI"></p>
+            <table>
+                 <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>BMI range</th>
+                    </tr>
+                </thead>                
+                <tbody>
+                    <tr>
+                        <td>Sottopeso severo</td>
+                        <td>< 16.5</td>
+                    </tr>
+                    <tr>
+                        <td>Sottopeso</td>
+                        <td>da 16.5 a 18.4</td>
+                    </tr>
+                    <tr>
+                        <td>Normale</td>
+                        <td>da 18.5 a 24.9</td>
+                    </tr>
+                    <tr>
+                        <td>Sovrappeso</td>
+                        <td>da 25 a 30</td>
+                    </tr>
+                    <tr>
+                        <td>Obesità primo grado</td>
+                        <td>da 30.1 a 34.9</td>
+                    </tr>
+                    <tr>
+                        <td>Obesità secondo grado</td>
+                        <td>da 35 a 40</td>
+                    </tr>
+                    <tr>
+                        <td>Obesità terzo grado</td>
+                        <td>> 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <br>
+        <br>
+        <a href="../index.html">Torna alla Home</a>
+    </body>
+</html>

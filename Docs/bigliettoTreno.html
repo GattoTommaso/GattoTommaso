@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: BigliettoTreno</title>
+        <script type="text/javascript" src ="../JavaScript/CalcoliBigliettoTreno.js">
+        </script>
+
+        <style type="text/css">
+        .risultati{
+            color:blue; 
+            font-size: 110%;
+        }
+        .bottone{
+            width: 100px;
+            height: 40px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <p>Distanza <input type="text" id="km">km</p>
+                <p><input type="radio" name="risp" id="r1">Prima classe</p>
+                <p><input type="radio" name="risp" id="r2">Seconda classe</p>
+                <p>Numero persone
+                    <select id="Npersone">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </p>
+            </fieldset>
+            
+            <p><input type="button" value="calcola" class="bottone" onclick="calcola()"></p>
+            <p id="costo" class="risultati">Prezzo:</p>
+        </form>
+        <br>
+        <br>
+        <a href="../index.html">Torna alla Home</a>
+    </body>
+</html>
