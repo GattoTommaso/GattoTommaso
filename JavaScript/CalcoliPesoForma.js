@@ -1,8 +1,8 @@
 function calcola(){
-    var altezza,sesso,eta;
+    var altezza,sesso,eta,kg;
     var scelta;
-    var Lorenz,Broca,Wan,Perrault,BMI;
-    var media, altezzaMetri;
+    var peso;
+    var altezzaMetri;
     
     altezza = document.getElementById("Altezza").value;
     scelta = document.getElementById("Sesso").selectedIndex;
@@ -15,44 +15,41 @@ function calcola(){
             break;
     }
     eta = document.getElementById("Eta").value;
+    kg = document.getElementById("Peso").value;
 
     //formula di Lorenz
     if(sesso==1){
-        Lorenz=altezza-100-(altezza-150)/4;
+        peso=altezza-100-(altezza-150)/4;
     }
     else if(sesso==2){
-        Lorenz=altezza-100-(altezza-150)/2;
+        peso=altezza-100-(altezza-150)/2;
     }
-    document.getElementById("PesoLorenz").innerHTML=Lorenz+"kg";
+    document.getElementById("PesoLorenz").innerHTML=peso+"kg";
 
     //formula di Broca
     if(sesso==1){
-        Broca=altezza-100;
+        peso=altezza-100;
     }
     else if(sesso==2){
-        Broca=altezza-104;
+        peso=altezza-104;
     }
-    document.getElementById("PesoBroca").innerHTML=Broca+"kg";
+    document.getElementById("PesoBroca").innerHTML=peso+"kg";
 
     //formula di Wan der Vae
     if(sesso==1){
-        Wan=(altezza-150)*0.75+50;
+        peso=(altezza-150)*0.75+50;
     }
     else if(sesso==2){
-        Wan=(altezza-150)*0.6+50;
+        peso=(altezza-150)*0.6+50;
     }
-    document.getElementById("PesoWanderVael").innerHTML=Wan+"kg";
+    document.getElementById("PesoWanderVael").innerHTML=peso+"kg";
 
     //formula di Perrault
-    Perrault=altezza-100+eta/10*0.9;
-    document.getElementById("PesoPerrault").innerHTML=Perrault+"kg";
+    peso=altezza-100+eta/10*0.9;
+    document.getElementById("PesoPerrault").innerHTML=peso+"kg";
 
     //formula di BMI
-    media=Lorenz+Broca+Wan+Perrault;
-    media=media/3;
     altezzaMetri=altezza/100;
-
-    BMI=media/(altezzaMetri*altezzaMetri);
-
-    document.getElementById("PesoBMI").innerHTML=BMI;
+    peso=kg/(altezzaMetri*altezzaMetri);
+    document.getElementById("PesoBMI").innerHTML=peso;
 }

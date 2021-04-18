@@ -1,5 +1,5 @@
 function calcola(){
-    var classe,persone,km;
+    var persone,km;
     var modprezzo,scelta;
     var prezzo;
     
@@ -7,11 +7,9 @@ function calcola(){
     km = document.getElementById("km").value;
     
     if(document.getElementById("r1").value){
-        classe=1;
         modprezzo=0.43;
     }
-    else{
-        classe=2;
+    else {
         modprezzo=0.25;
     }
     //a seconda dell'indice imposta il numero di persone
