@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: Text</title>
+        <script type="text/javascript" src ="../JavaScript/CalcoliQuiz.js">
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <p>Dati anagrafici</p>
+                <p>Cognome: <input type="text" id="Cognome"> Nome: <input type="text" id="Nome"></p>
+                <p>Data di nascita</p>
+                <p>Giorno <input type="text" id="Giorno"> 
+                    Mese <select id="Mese">
+                    <option>GEN</option>
+                    <option>FEB</option>
+                    <option>MAR</option>
+                    <option>APR</option>
+                    <option>MAG</option>
+                    <option>GIU</option>
+                    <option>LUG</option>
+                    <option>AGO</option>
+                    <option>SET</option>
+                    <option>OTT</option>
+                    <option>NOV</option>
+                    <option>DIC</option>
+                    </select>
+                    Anno <input type="text" id="Anno">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Domande</legend>
+                <p>Qual è il linguaggio di programmazione utilizzato per creare e modificare i database? (in maiuscolo)</p>
+                <input type="text" id="Risposta1">
+        
+                <p>Quanti valori può assumere una variabile booleana?
+                    <br>
+                    <select id="Risposta2">
+                        <option id="Risposta2_1">1</option>
+                        <option id="Risposta2_2">2</option>
+                        <option id="Risposta2_3">4</option>
+                        <option id="Risposta2_4">256</option>
+                    </select>
+                </p>
+                <p>Quali sono le librerie caricate a run-time?</p>
+                <p><input type="radio" name="domanda3" id="Risposta3_1">Statiche</p>
+                <p><input type="radio" name="domanda3" id="Risposta3_2">Dinamiche</p>
+
+                <p>Quali tra queste sono parole chiave in C++?</p>
+                <p><input type="checkbox" name="domanda4_1" id="Risposta4_1"> void</p>
+                <p><input type="checkbox" name="domanda4_2" id="Risposta4_2"> integer</p>
+                <p><input type="checkbox" name="domanda4_3" id="Risposta4_3"> char</p>
+
+                <p>8 bit corrispondono a un...</p>
+                <input type="text" id="Risposta5">
+            </fieldset>
+
+            <p><input type="button" value="Elabora" class="bottone" onclick="calcola()"> <input type="reset" id="Cancella" value="annulla"></p></p>
+            
+            <fieldset>
+                <p>Utente con punteggio <output type="text" id="PunteggioUtente"></output></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esito</legend>
+                <p>Punteggio: <output type="text" id="Punteggio"></p> 
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <a href="../index.html">Torna alla Home</a>
+    </body>
+</html>

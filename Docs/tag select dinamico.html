@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: Tag select dinamico</title>
+        <link rel="stylesheet" type="text/css" href="../Css/CSStag select dinamico.css">
+        <script type="text/javascript" src ="../JavaScript/CalcoliTagSelectDinamico.js"></script>
+    </head>
+    <body>
+        <div class="a">
+            <h1>Supergiga 20 & TIMMUSIC</h1>
+            <p>L’offerta più conveniente per navigare dove vuoi</p>
+            <ul>
+                <li>20 Giga al mese</li>
+                <li>TIMMUSIC incluso</li>
+            </ul>
+        </div>
+
+        <div class="b">
+            <div class="row">
+                <div class="column" style="background-color:#aaa;">
+                    <p>Cognome <input type="text" id="Cognome"></p>
+                    <p>Nome <input type="text" id="Nome"></p>
+                    <p>Data <input type="text" id="Data"></p>
+                    <p>Cittadinanza <input type="text" id="Cittadinanza"></p>
+                    <p>Via <input type="text" id="Via"></p>
+                    <p>Stato civile <input type="text" id="Stato_civile"></p>
+                    <p>Professione <input type="text" id="Professione"></p>
+                    <p><input type="button" value="Conferma" class="bottone" onclick="conferma()"></p>
+                </div>
+
+                <div class="column" style="background-color:#bbb;">
+                    <form>
+                        <p>Sesso: </p>
+                        <select id="Sesso" size="2">
+                          <option>Maschio</option>
+                          <option>Femmina</option>
+                        </select>
+                        <p>Occhi: </p>
+                        <select id="Occhi" size="4">
+                            <option>Neri</option>
+                            <option>Castani</option>
+                            <option>Marrone chiaro</option>
+                            <option>Ambra</option>
+                            <option>Verdi</option>
+                            <option>Azzurri</option>
+                            <option>Rossi</option>
+                            <option>Viola</option>
+                        </select>
+                        <p>Provincia di residenza: </p>
+                        <select id="Provincia" size="4">
+                            <option>Ancona</option>
+                            <option>Bari</option>
+                            <option>Bologna</option>
+                            <option>Cagliari</option>
+                            <option>Como</option>
+                            <option>Firenze</option>
+                            <option>Lecco</option>
+                            <option>Napoli</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a href="../index.html">Torna alla Home</a>
+    </body>
+</html>

@@ -6,7 +6,7 @@ function calcola(){
     //prendo i valori e li salvo nelle variabili
     km = document.getElementById("km").value;
     
-    if(document.getElementById("r1").value){
+    if(document.getElementById("r1").checked==true){
         modprezzo=0.43;
     }
     else {
