@@ -1,12 +1,13 @@
 body{
-    background-image: url('../Images/Background.jpg');
-    background-size: cover;
-    background-repeat: repeat;
+    background-image: url('../Images/sfondo.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 ol{
     color: white;
-    border: 1px solid white;
+    border: 5px double;
+    background-color: rgba(13, 133, 2, 0.616);
 }
 
 a{
@@ -21,4 +22,16 @@ h1{
 h3{
     text-align: center;
     color: white;
+}
+
+table{
+    border: 5px double;
+    width: 100%;
+    color: white;
+    background-color: rgba(13, 133, 2, 0.616);
+}
+
+td{
+    padding:5px;
+    padding-left:15px;
 }
