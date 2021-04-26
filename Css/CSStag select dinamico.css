@@ -11,6 +11,15 @@ ul {
     list-style-type: square;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+p{
+    color: black;
+}
+
 .column {
     float: left;
     width: 100%;
@@ -31,4 +40,14 @@ ul {
 .bottone{
     width: 300px;
     height: 40px;
+}
+
+.bottone_giorno_notte{
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border-color: white;
 }
