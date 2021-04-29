@@ -1,0 +1,18 @@
+.bottone_giorno_notte{
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+    border-color: white;
+}
+
+canvas{
+    background-color: white;
+}
+
+.bottone{
+    width: 290px;
+    height: 40px;
+}
