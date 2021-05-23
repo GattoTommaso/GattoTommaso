@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: PDF</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+        <script type="text/javascript" src ="../JavaScript/CalcoliPDF.js"></script>
+        <style>
+        h1{
+            color:red;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h1>Creare un PDF con JavaScript</h1>
+        <p>Inserire il nome: <input type="text" id="Nome" value="*"></p>
+        <p>Inserire il cognome: <input type="text" id="Cognome" value="*"></p>
+        <p>Inserire il numero di telefono: <input type="text" id="Numero" value="*"></p>
+        <p>Inserire l'email: <input type="text" id="Email" value="*"></p>
+        <p><textarea id="Messaggio" name="text_area" rows="20" cols="100" >*</textarea></p>
+        <p>Clicca il bottone per scaricare il PDF con i tuoi dati: <input type="button" value="Clicca qui" onclick="creaPdf()"></p>
+    </body>
+</html>

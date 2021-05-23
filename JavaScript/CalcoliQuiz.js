@@ -8,6 +8,7 @@ function calcola(){
     Nome=document.getElementById("Nome").value;
     Giorno=document.getElementById("Giorno").value;
     scelta = document.getElementById("Mese").selectedIndex;
+
     switch(scelta){
         case 0:
             Mese="Gennaio";

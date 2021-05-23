@@ -1,0 +1,14 @@
+.bottone{
+    width: 250px;
+    height: 40px;
+}
+
+div.a {
+    border:double;
+    background-color: rgb(139, 138, 138);
+}
+
+div.b {
+    border:double;
+    background-color: rgb(255, 0, 0);
+}

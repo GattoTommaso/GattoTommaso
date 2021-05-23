@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progetto: PDF</title>
+        <script type="text/javascript" src ="../JavaScript/CalcoliCartesiano.js"></script>
+        <style>
+        h1{
+            color:red;
+        }
+        </style>
+    </head>
+
+    <body>
+        <h1>Piano Cartesiano</h1>
+        <p>X=<input type="number" id="x" min="-14" max="14"></p>
+        <p>Y=<input type="number" id="y" min="-12" max="12"></p>
+
+        <p>Crea piano cartesiano <input type="button" value="Disegna" onclick="creaFigura()"></p>
+        <canvas id="lavagna" width="600" height="500" style="border:1px solid black"></canvas>
+    </body>
+</html>
